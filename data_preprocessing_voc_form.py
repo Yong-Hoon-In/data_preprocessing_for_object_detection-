@@ -22,7 +22,7 @@ file_list_jpg = [file for file in file_list if file.endswith(".jpg")]
 save_path_xml="path"
 save_path_img="path"
 
-labels=['bicycle',
+labels=['bicycle',  #label 
 'bus',
 'car',
 'carrier',
@@ -54,10 +54,10 @@ labels=['bicycle',
 ]
 
 def obj_tv():
-    for lab in labels:
-        trainval = open('ImageSets/Main/'+lab+'_trainval.txt', 'w')
-        val = open('ImageSets/Main/'+lab+'_val.txt', 'w')
-        train = open('ImageSets/Main/'+lab+'_train.txt', 'w')
+    for label in labels:
+        trainval = open('ImageSets/Main/'+label+'_trainval.txt', 'w')
+        val = open('ImageSets/Main/'+label+'_val.txt', 'w')
+        train = open('ImageSets/Main/'+label+'_train.txt', 'w')
         train.close()
         val.close()        
         trainval.close() 
